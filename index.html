@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Mariam Cheikh — frontend engineer in Munich. React, TypeScript and mobile development, with an international journey spanning Tunisia, Germany, the Netherlands and India.">
+<meta name="theme-color" content="#17191f">
+<title>Mariam Cheikh — Frontend Engineer</title>
+<style>
+:root{--paper:#fafbff;--ink:#17191f;--muted:#626775;--line:#dce0e9;--accent:#244de8;--white:#fff;--max:1320px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}::selection{background:var(--accent);color:var(--ink)}:focus-visible{outline:3px solid #244de8;outline-offset:6px}.skip{position:fixed;top:-100px;left:20px;padding:10px;background:var(--accent);z-index:100}.skip:focus{top:10px}.wrap{max-width:var(--max);margin:auto;padding-inline:56px}.eyebrow,.index,.meta,.tag{font-family:"Courier New",monospace;font-size:13px;line-height:1.5;letter-spacing:.07em;text-transform:uppercase}.eyebrow{display:block;margin:0 0 24px}.muted{color:var(--muted)}header{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--line)}.nav{min-height:88px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}.brand{font-size:21px;font-weight:700;letter-spacing:-1px}.brand span{color:#244de8}nav{display:flex;gap:24px;align-items:center;flex-wrap:wrap}nav a{font-size:14px;position:relative}nav a::after{content:"";position:absolute;bottom:-7px;left:0;right:0;height:2px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .2s}nav a:hover::after,nav a[aria-current]::after{transform:scaleX(1)}.nav-right{display:flex;align-items:center;gap:16px}.nav-contact{border:1px solid var(--ink);padding:10px 18px;font-size:14px}.nav-contact:hover{background:var(--ink);color:var(--paper)}.lang-switch{display:flex;gap:4px}.lang-switch button{font-family:"Courier New",monospace;font-size:12px;letter-spacing:.03em;border:1px solid var(--ink);background:transparent;color:var(--ink);padding:6px 9px;cursor:pointer;display:inline-flex;align-items:center;gap:5px}.lang-switch button span{font-size:13px}.lang-switch button.active{background:var(--ink);color:var(--paper)}.hero{padding-top:66px}.hero-meta{display:flex;justify-content:space-between;gap:20px}.hero-name{font-size:clamp(68px,10.4vw,146px);line-height:.96;letter-spacing:-.08em;font-weight:500;margin:38px 0 48px}.hero-name span{display:block;margin-left:22%}.hero-bottom{display:grid;grid-template-columns:1fr 1.15fr;gap:64px;padding:0 0 60px}.role{font-size:clamp(28px,3.7vw,48px);line-height:1.15;letter-spacing:-.04em;margin:0}.role em{font-family:Georgia,serif;font-weight:400}.intro{font-size:20px;max-width:550px;line-height:1.6;margin:0 0 28px}.actions{display:flex;align-items:center;gap:26px;flex-wrap:wrap}.button{display:inline-flex;align-items:center;justify-content:space-between;gap:36px;background:var(--ink);color:var(--paper);padding:15px 22px;font-size:15px;transition:background .2s,transform .2s}.button:hover{background:#244de8;transform:translateY(-2px)}.text-link{font-size:15px;border-bottom:1px solid var(--ink);padding-bottom:3px}.text-link:hover{color:#244de8}.facts{display:grid;grid-template-columns:.8fr 1.5fr 1fr;background:var(--accent);padding:26px 30px;gap:24px}.fact{padding-right:24px;border-right:1px solid #dce0e9;display:flex;flex-direction:column;gap:4px}.fact:last-child{border:0}.fact strong{font-weight:500;font-size:20px;letter-spacing:-.03em}.fact span{font-size:13px}.section{padding-block:98px;border-bottom:1px solid var(--line)}.section-layout{display:grid;grid-template-columns:240px 1fr;gap:48px}.index{color:var(--muted)}h2{font-size:clamp(32px,4vw,52px);line-height:1.1;font-weight:500;letter-spacing:-.05em;margin:18px 0 35px}h3{font-weight:500;letter-spacing:-.035em;line-height:1.2;margin:0}.about-lead{font-size:clamp(25px,2.8vw,36px);line-height:1.4;letter-spacing:-.035em;margin:0 0 28px;max-width:870px}.body-copy{color:var(--muted);font-size:18px;max-width:720px;margin:0}.experience-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:40px}.experience-head h2{margin-bottom:0}.experience-head p{max-width:290px;font-size:16px;color:var(--muted);margin:0}.job{display:grid;grid-template-columns:240px 1fr;gap:48px;padding:38px 0;border-top:1px solid var(--line)}.job-date{color:var(--muted);font-size:14px}.job-date .tag{display:table;background:var(--accent);color:var(--ink);padding:4px 10px;margin-top:16px;font-size:12px}.job-title{display:flex;justify-content:space-between;gap:20px;align-items:baseline}.job h3{font-size:30px}.job-location{font-size:14px;color:var(--muted);white-space:nowrap}.job-role{margin:8px 0 20px;font-size:16px}.job ul{padding-left:18px;max-width:750px;color:var(--muted);margin:0}.job li{margin-bottom:10px;padding-left:6px}.job p.detail{color:var(--muted);margin-bottom:0;max-width:740px}.placement{font-size:14px;color:var(--muted);font-style:italic}.skills-section{background:var(--ink);color:var(--paper)}.skills-section .index{color:#bbc2d5}.skills-section h2 em{color:var(--accent);font-family:Georgia,serif;font-weight:400}.skill-row{border-top:1px solid #414858;padding:25px 0;display:grid;grid-template-columns:160px 1fr;gap:24px}.skill-row:first-child{border-top:0;padding-top:0}.skill-row h3{font-size:17px;letter-spacing:0;margin-top:6px}.skill-list{display:flex;flex-wrap:wrap;gap:9px}.skill-list span{border:1px solid #515b71;padding:6px 11px;font-size:14px;color:#e3e8f4;border-radius:4px}.skill-row:first-child .skill-list span{color:#ccd8ff;border-color:#6479bd}.background-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:44px 60px}.background-grid h3{font-family:"Courier New",monospace;font-size:13px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-bottom:24px}.entry{margin-bottom:24px}.entry p{margin:4px 0}.entry .title{font-size:19px;line-height:1.4}.entry .description{font-size:14px;color:var(--muted)}.learning-caption{font-size:14px;color:#2441a9;line-height:1.6}.language{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding:11px 0}.language:first-of-type{padding-top:0}.language span:last-child{color:var(--muted);font-size:14px;text-align:right}.recognition{grid-column:1/-1;border-top:1px solid var(--line);padding-top:32px}.award{display:grid;grid-template-columns:65px 1fr;gap:20px;align-items:baseline;margin-top:0;padding:24px 0;border-top:1px solid var(--line)}.award:first-of-type{border-top:0;padding-top:0}.award strong{font-size:38px;font-family:Georgia,serif;font-weight:400;color:#244de8}.award p{margin:0;font-size:17px}.award-detail{font-size:14px!important;color:var(--muted);margin-top:8px!important}.source-link{display:inline-block;margin-top:10px;font-size:14px;color:#2441a9;text-decoration:underline;text-underline-offset:4px}.interests-intro{color:var(--muted);max-width:260px;font-size:16px}.interests-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-left:1px solid var(--line)}.interest-card{padding:30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;min-width:0}.interest-card .eyebrow{font-size:12px;color:#626775;margin-bottom:24px}.interest-card h3{font-family:Georgia,serif;font-size:36px;line-height:1.15;letter-spacing:-.035em}.interest-card p{font-size:16px;color:#626775;margin:16px 0 0;line-height:1.65}.interest-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:42px;margin-bottom:15px}.interest-heading .eyebrow{margin:0}.interest-card.chess-card{background:#edf1ff}.chess-icon{font-family:Georgia,serif;font-size:36px;line-height:1;color:#244de8}.hobby-icon{width:32px;height:32px;color:#244de8;flex:none;display:block}.travel-card{grid-column:1/-1}.travel-card p{max-width:540px}.lead-chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.lead-chips span{border:1px solid var(--line);padding:6px 11px;font-size:14px;color:var(--muted)}.contact{padding-block:84px 36px}.contact h2{font-size:clamp(48px,7.5vw,100px);max-width:800px;margin-bottom:40px}.contact h2 em{font-family:Georgia,serif;font-weight:400;color:#244de8}.contact-grid{display:flex;justify-content:space-between;align-items:end;gap:32px}.contact-email{font-size:clamp(17px,2.3vw,28px);border-bottom:1px solid;padding-bottom:8px;overflow-wrap:anywhere}.contact-email:hover{color:#244de8}.contact-other{display:flex;gap:26px}.footer-bottom{display:flex;justify-content:space-between;gap:24px;margin-top:80px;padding-top:24px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+
+.hero-surface{background:#17191f;color:#fafbff}.hero{padding-top:52px;padding-bottom:38px}.hero-meta .muted{color:#b8bfd0}.hero-meta .eyebrow{font-size:12px}.hero-name{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.065em;line-height:1.02;margin-block:24px 42px;font-size:clamp(78px,11.5vw,155px)}.hero-name>span{margin-left:20%;font-style:italic}.hero-name .name-period{display:inline;margin:0;color:#8fa7ff}.hero-bottom{border-top:1px solid #414858;padding-top:36px;padding-bottom:38px}.role{font-size:clamp(26px,3.2vw,41px)}.role em{color:#b9c8ff}.intro{font-size:18px;color:#c8cedb}.hero .button{background:#244de8;color:#fff}.hero .button:hover{background:#3b61f1}.hero .text-link{border-color:#7e879b}.hero .text-link:hover{color:#b9c8ff}.facts{background:transparent;border-top:1px solid #414858;padding:25px 0 0}.fact{border-color:#414858}.fact strong{font-size:22px}.fact span{color:#b8bfd0}.job-date .tag{background:#e9eeff;color:#2441a9}.job:first-of-type{border-top:2px solid #244de8}.job h3{font-size:32px}.job h3 a{border-bottom:1px solid transparent;padding-bottom:2px}.job h3 a:hover,.job h3 a:focus-visible{border-bottom-color:currentColor}.job h3 a span{font-size:.6em;vertical-align:middle}
+
+.experience-video{margin-top:28px;max-width:750px;border:1px solid var(--line);background:#fff}.video-heading{padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.video-heading h4{font-size:16px;font-weight:500;line-height:1.5;margin:0}.video-heading a{font-size:14px;color:#2441a9;text-decoration:underline;text-underline-offset:4px}.video-frame{aspect-ratio:16/9;background:#17191f;position:relative;min-height:200px;cursor:pointer}.video-frame iframe{width:100%;height:100%;display:block;border:0;position:absolute;inset:0}.video-frame .video-thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.video-frame .video-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60px;height:60px;border-radius:50%;background:rgba(23,25,31,.8);border:2px solid #fff;color:#fff;font-size:18px;display:flex;align-items:center;justify-content:center;transition:background .2s,transform .2s}.video-frame:hover .video-play,.video-frame:focus-visible .video-play{background:#244de8;transform:translate(-50%,-50%) scale(1.08)}.video-frame:focus-visible{outline:3px solid #244de8;outline-offset:3px}
+
+@media(min-width:1500px){.hero-name{font-size:146px}}
+@media(max-width:900px){.wrap{padding-inline:30px}.nav{gap:16px}nav{gap:16px}.section-layout,.job{grid-template-columns:170px 1fr;gap:30px}.hero-bottom{gap:40px}.hero-name{margin-block:40px;font-size:clamp(78px,12vw,130px)}.job-title{display:block}.job-location{display:block;margin-top:8px}.skill-row{grid-template-columns:1fr;gap:14px}.background-grid{gap:36px}.facts{padding:24px;grid-template-columns:.8fr 1.4fr 1fr}.contact-grid{align-items:start;flex-direction:column}.interest-card{padding:24px}.interest-card h3{font-size:31px}}
+@media(max-width:600px){html{scroll-padding-top:150px}.wrap{padding-inline:22px}.nav{min-height:auto;flex-wrap:wrap;gap:10px;padding-block:13px}.brand{font-size:20px}.nav-right{margin-left:auto;gap:10px}.nav-contact{padding:6px 12px}.nav nav{order:3;width:100%;justify-content:space-between;gap:14px}nav a{font-size:12px;min-height:28px;display:flex;align-items:center}.hero{padding-top:32px;padding-bottom:26px}.hero-meta{flex-direction:column;gap:6px}.hero-meta .eyebrow{margin:0;font-size:12px}.hero-name{font-size:clamp(62px,16vw,96px);margin:28px 0 30px}.hero-name span{margin-left:8%}.hero-bottom{grid-template-columns:1fr;gap:24px;padding-top:26px;padding-bottom:28px}.role{font-size:30px}.intro{font-size:18px;margin-bottom:22px}.facts{grid-template-columns:1fr;gap:15px;padding-top:22px}.fact{border-right:0;border-bottom:1px solid #414858;padding:0 0 15px}.fact:last-child{border:0;padding:0}.fact strong{font-size:21px}.section{padding-block:60px}.section-layout,.job{grid-template-columns:1fr;gap:20px}h2{margin:14px 0 10px}.about-lead{font-size:26px}.body-copy{font-size:17px}.experience-head{display:block;margin-bottom:30px}.experience-head p{margin-top:22px}.job{padding-block:28px;gap:14px}.job-date{display:flex;align-items:center;gap:18px;flex-wrap:wrap}.job-date .tag{margin:0}.job h3{font-size:27px}.background-grid{grid-template-columns:1fr}.recognition{grid-column:auto}.interests-grid{grid-template-columns:1fr}.contact{padding-top:60px}.contact h2{font-size:52px}.footer-bottom{margin-top:52px}.contact-other{flex-wrap:wrap}.skills-section h2{margin-bottom:20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+@media print{header{position:static}.nav-contact,.lang-switch,nav,.actions,.contact-other,.footer-bottom>a,.video-frame{display:none}.wrap{padding-inline:0}.hero{padding-top:25px}.hero-name{font-size:72px;margin:25px 0}.hero-name>span{margin-left:0}.section{padding-block:30px}.job{break-inside:avoid}.hero-surface{background:#fff;color:#17191f}.hero .intro,.hero-meta .muted,.fact span{color:#626775}.skills-section{background:white;color:black}.skill-list span,.skill-row:first-child .skill-list span,.skills-section .index,.skills-section h2 em{color:black}.contact{padding-top:30px}.contact h2{font-size:40px}.contact h2 em{color:#17191f}.facts{background:#eee;border:1px solid #ccc}.section-layout,.job{grid-template-columns:150px 1fr;gap:25px}.interest-card{break-inside:avoid}.award{break-inside:avoid}.experience-video{break-inside:avoid}.video-heading a::after{content:" (" attr(href) ")";font-size:11px;overflow-wrap:anywhere}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+<header><div class="wrap nav">
+  <a href="#home" class="brand" aria-label="Mariam Cheikh home">mariam cheikh<span>.</span></a>
+  <nav aria-label="Main navigation">
+    <a href="#profile" data-i18n="nav_about">About</a>
+    <a href="#experience" data-i18n="nav_experience">Experience</a>
+    <a href="#skills" data-i18n="nav_skills">Expertise</a>
+    <a href="#background" data-i18n="nav_background">Background</a>
+    <a href="#leadership" data-i18n="nav_leadership">Leadership</a>
+    <a href="#hobbies" data-i18n="nav_hobbies">Hobbies</a>
+  </nav>
+  <div class="nav-right">
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang="en" class="active"><span aria-hidden="true">🇬🇧</span> EN</button>
+      <button type="button" data-lang="de"><span aria-hidden="true">🇩🇪</span> DE</button>
+      <button type="button" data-lang="nl"><span aria-hidden="true">🇳🇱</span> NL</button>
+      <button type="button" data-lang="fr"><span aria-hidden="true">🇫🇷</span> FR</button>
+    </div>
+    <a class="nav-contact" href="#contact" data-i18n="nav_contact">Let's talk <span aria-hidden="true">↗</span></a>
+  </div>
+</div></header>
+
+<main id="main">
+<div class="hero-surface"><section class="wrap hero" id="home" aria-labelledby="hero-title">
+  <div class="hero-meta">
+    <p class="eyebrow" data-i18n="hero_eyebrow1">Frontend engineer / React &amp; TypeScript</p>
+    <p class="eyebrow muted" data-i18n="hero_eyebrow2">Based in Munich, Germany</p>
+  </div>
+  <h1 class="hero-name" id="hero-title">Mariam<span>Cheikh<span class="name-period">.</span></span></h1>
+  <div class="hero-bottom">
+    <p class="role" data-i18n="hero_role">Thoughtful interfaces.<br><em>Solid engineering.</em></p>
+    <div>
+      <p class="intro" data-i18n="hero_intro">I build customer-facing products with React and TypeScript, bringing a mobile background and an international perspective to the web.</p>
+      <div class="actions">
+        <a class="button" href="#experience" data-i18n="cta_explore">Explore my experience <span aria-hidden="true">↓</span></a>
+        <a class="text-link" href="https://www.linkedin.com/in/mariamcheikh/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="facts">
+    <div class="fact"><strong data-i18n="fact1_strong">5+ years</strong><span data-i18n="fact1_span">In software engineering</span></div>
+    <div class="fact"><strong data-i18n="fact2_strong">Four countries. One perspective.</strong><span data-i18n="fact2_span">Tunisia · Germany · Netherlands · India</span></div>
+    <div class="fact"><strong data-i18n="fact3_strong">Web &amp; mobile</strong><span data-i18n="fact3_span">From native apps to modern frontends</span></div>
+  </div>
+</section></div>
+
+<section class="wrap section" id="profile"><div class="section-layout">
+  <div><span class="index" data-i18n="idx_about">01 / About</span><h2 data-i18n="h2_about">Built with<br>perspective.</h2></div>
+  <div>
+    <p class="about-lead" data-i18n="about_lead">Good interfaces start with understanding the people using them — and the engineering that makes them work.</p>
+    <p class="body-copy" data-i18n="about_body1">My journey connects software engineering studies in Tunisia with professional experience in India, the Netherlands and Germany. With 5+ years in software engineering, my work spans consumer products serving millions of users, frontend architecture and production releases. Today, I focus on React and TypeScript, building on earlier native Android experience with Kotlin and Java.</p>
+    <p class="body-copy" style="margin-top:16px" data-i18n="about_body2">Alongside engineering, I'm developing my project management knowledge through PMP learning. I'm also a psychology enthusiast, curious about how people think and behave.</p>
+  </div>
+</div></section>
+
+<section class="wrap section" id="experience">
+  <div class="experience-head">
+    <div><span class="index" data-i18n="idx_experience">02 / Experience</span><h2 data-i18n="h2_experience">From idea to production.</h2></div>
+    <p data-i18n="experience_head_p">Product delivery, architecture and collaboration across teams and borders.</p>
+  </div>
+
+  <article class="job">
+    <div class="job-date">Dec 2022 — <span data-i18n="present">Present</span><span class="tag" data-i18n="tag_current">Current role</span></div>
+    <div>
+      <div class="job-title"><h3><a href="https://reifen.auto.check24.de/ul" target="_blank" rel="noopener noreferrer">CHECK24 <span aria-hidden="true">↗</span></a></h3><span class="job-location">🇩🇪 Munich, Germany</span></div>
+      <p class="job-role" data-i18n="check24_role">Software Engineer · CHECK24 Vergleichsportal GmbH</p>
+      <ul>
+        <li data-i18n="check24_b1">Build and ship customer-facing web and mobile functionality for a consumer platform serving millions of users, using React, TypeScript and Android.</li>
+        <li data-i18n="check24_b2">Own major product features, including scan-based functionality, through production release against fixed campaign deadlines.</li>
+        <li data-i18n="check24_b3">Modernize frontend architecture by migrating the application to React Router.</li>
+        <li data-i18n="check24_b4">Partner with Product, Backend and Data Science to translate business and data requirements into production functionality.</li>
+        <li data-i18n="check24_b5">Write lightweight PHP/Symfony controllers and REST integrations to support frontend features.</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="job">
+    <div class="job-date">Aug 2021 — Mar 2022</div>
+    <div>
+      <div class="job-title"><h3><a href="https://www.apadmi.com/group/the-mobile-company/" target="_blank" rel="noopener noreferrer">Apadmi <span aria-hidden="true">↗</span></a></h3><span class="job-location">🇳🇱 Amsterdam, Netherlands</span></div>
+      <p class="job-role" data-i18n="apadmi_role">Mobile Software Engineer · Contract</p>
+      <p class="detail" data-i18n="apadmi_b1">Developed mobile applications and delivered MVP features in cross-functional teams using Kotlin, Java, Swift, Flutter and Firebase.</p>
+    </div>
+  </article>
+
+  <article class="job">
+    <div class="job-date">Sep 2020 — Aug 2021</div>
+    <div>
+      <div class="job-title"><h3><a href="https://www.censo.nl/" target="_blank" rel="noopener noreferrer">Censo Data Solutions <span aria-hidden="true">↗</span></a></h3><span class="job-location">🇳🇱 Nijmegen, Netherlands</span></div>
+      <p class="job-role" data-i18n="censo_role">Software Engineer</p>
+      <p class="detail" data-i18n="censo_b1">Developed customer-facing Vue.js applications in an Agile/Scrum team, shipping new functionality and resolving production defects.</p>
+      <p class="placement" data-i18n="censo_placement">International placement · AIESEC Global Talent Program</p>
+      <div class="experience-video">
+        <div class="video-heading"><h4 data-i18n="video_nl_heading">My experience in the Netherlands</h4><a href="https://www.youtube.com/watch?v=bFBvb6tCXPU" target="_blank" rel="noopener noreferrer" data-i18n="yt_watch">Watch on YouTube ↗</a></div>
+        <div class="video-frame" data-video-id="bFBvb6tCXPU" data-video-title="Mariam's experience in the Netherlands" role="button" tabindex="0" aria-label="Watch on YouTube (opens in a new tab)">
+          <img class="video-thumb" src="https://img.youtube.com/vi/bFBvb6tCXPU/hqdefault.jpg" alt="" loading="lazy">
+          <span class="video-play" aria-hidden="true">▶</span>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="job">
+    <div class="job-date">Dec 2018 — Oct 2019</div>
+    <div>
+      <div class="job-title"><h3>Tata Consultancy Services</h3><span class="job-location">🇮🇳 Kolkata, India</span></div>
+      <p class="job-role" data-i18n="tcs_role">Mobile Software Engineer</p>
+      <p class="detail" data-i18n="tcs_b1">Developed mobile functionality and REST integrations using Java, Angular and Ionic in an international Agile environment.</p>
+      <p class="placement" data-i18n="tcs_placement">International placement · ACE International Career Program</p>
+      <div class="experience-video">
+        <div class="video-heading"><h4 data-i18n="video_in_heading">My experience in India</h4><a href="https://www.youtube.com/watch?v=u5J77w6Wupg&amp;t=10s" target="_blank" rel="noopener noreferrer" data-i18n="yt_watch">Watch on YouTube ↗</a></div>
+        <div class="video-frame" data-video-id="u5J77w6Wupg" data-video-start="10" data-video-title="Mariam's experience in India" role="button" tabindex="0" aria-label="Watch on YouTube (opens in a new tab)">
+          <img class="video-thumb" src="https://img.youtube.com/vi/u5J77w6Wupg/hqdefault.jpg" alt="" loading="lazy">
+          <span class="video-play" aria-hidden="true">▶</span>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
+
+<section class="skills-section" id="skills"><div class="wrap section section-layout">
+  <div><span class="index" data-i18n="idx_skills">03 / Expertise</span><h2 data-i18n="h2_skills">A frontend<br>focus.<br><em>A wider lens.</em></h2></div>
+  <div>
+    <div class="skill-row"><h3 data-i18n="skills_frontend">Frontend</h3><div class="skill-list"><span>React</span><span>TypeScript</span><span>React Router</span><span>JavaScript</span><span>Vue.js</span><span>HTML</span><span>CSS</span><span>Twig</span></div></div>
+    <div class="skill-row"><h3 data-i18n="skills_mobile">Mobile</h3><div class="skill-list"><span>Android</span><span>Kotlin</span><span>Java</span><span>Jetpack Compose</span><span>Retrofit</span><span>WebView</span><span>Flutter</span></div></div>
+    <div class="skill-row"><h3 data-i18n="skills_backend">Backend exposure</h3><div class="skill-list"><span>PHP</span><span>Symfony</span><span>REST APIs</span></div></div>
+    <div class="skill-row"><h3 data-i18n="skills_tools">Ways of working</h3><div class="skill-list"><span data-i18n="chip_crossfunc">Cross-functional delivery</span><span>Agile / Scrum</span><span>Cursor</span><span data-i18n="chip_ai">AI-assisted development</span></div></div>
+  </div>
+</div></section>
+
+<section class="wrap section" id="background"><div class="section-layout">
+  <div><span class="index" data-i18n="idx_background">04 / Background</span><h2 data-i18n="h2_background">Beyond<br>the stack.</h2></div>
+  <div class="background-grid">
+    <div>
+      <h3 data-i18n="bg_heading_education">Education &amp; learning</h3>
+      <div class="entry"><p class="title">Software Engineering</p><p class="description" data-i18n="edu_esprit_desc">ESPRIT · Tunis, Tunisia<br>EUR-ACE accredited</p></div>
+      <div class="entry">
+        <p class="title" data-i18n="edu_pmp_title">PMP exam preparation</p>
+        <p class="description" data-i18n="edu_pmp_desc">Completed · 1 September 2025<br>35 contact hours of training</p>
+        <p class="learning-caption" data-i18n="edu_pmp_caption">Continuing to develop my project management knowledge.</p>
+      </div>
+    </div>
+    <div>
+      <h3 data-i18n="bg_heading_languages">Languages</h3>
+      <div class="language"><span data-i18n="lang_ar_name">Arabic</span><span data-i18n="lang_ar_level">Native / bilingual</span></div>
+      <div class="language"><span data-i18n="lang_en_name">English</span><span data-i18n="lang_en_level">Full professional</span></div>
+      <div class="language"><span data-i18n="lang_fr_name">French</span><span data-i18n="lang_fr_level">Full professional</span></div>
+      <div class="language"><span data-i18n="lang_de_name">German</span><span data-i18n="lang_de_level">Elementary</span></div>
+    </div>
+    <div class="recognition">
+      <h3 data-i18n="bg_heading_recognition">Recognition</h3>
+      <div class="award"><strong>1st</strong><div><p>City of Culture Mobile App Hackathon</p><p class="award-detail" data-i18n="award1_detail">Our team won first prize for a mobile app for the City of Culture at Developers World Forum in Tunisia.</p><a class="source-link" href="https://www.linkedin.com/posts/mariamcheikh_hackathon-mobileapp-cityofculture-activity-6456599850925453312-DIG-" target="_blank" rel="noopener noreferrer" data-i18n="award1_link">View the story on LinkedIn ↗</a></div></div>
+      <div class="award"><strong>2nd</strong><div><p>Tayara Hackathon · TrustKell</p><p class="award-detail" data-i18n="award2_detail">My team, The Challengers, placed second among 40 competing teams with TrustKell. Our entry explored blockchain and an environmental theme, bringing a shared idea into a competitive hackathon setting.</p><a class="source-link" href="https://www.linkedin.com/posts/mariamcheikh_secondplacewinners-40teams-hackathon-activity-6460227709745274880-G8Ew" target="_blank" rel="noopener noreferrer" data-i18n="award2_link">Read the Tayara story on LinkedIn ↗</a></div></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="wrap section" id="leadership"><div class="section-layout">
+  <div><span class="index" data-i18n="idx_leadership">05 / Leadership</span><h2 data-i18n="h2_leadership">Beyond code —<br>growing into<br><em>leadership.</em></h2></div>
+  <div>
+    <p class="about-lead" data-i18n="lead_lede">Frontend work has always meant more than writing components for me — it means translating between product, data and engineering, and keeping people aligned around a shared deadline.</p>
+    <p class="body-copy" data-i18n="lead_body">Five years of cross-functional delivery — partnering daily with Product Management, Backend and Data Science teams — has sharpened skills that go beyond the stack: clear communication, stakeholder alignment and steady decision-making under fixed deadlines. I'm building on this foundation, including through PMP preparation, as I look toward taking on more product- and people-leadership responsibility.</p>
+    <div class="lead-chips">
+      <span data-i18n="lead_chip1">Cross-functional collaboration</span>
+      <span data-i18n="lead_chip2">Stakeholder communication</span>
+      <span data-i18n="lead_chip3">Ownership under deadlines</span>
+      <span data-i18n="lead_chip4">Translating business &amp; data requirements</span>
+      <span data-i18n="lead_chip5">PMP in progress</span>
+    </div>
+  </div>
+</div></section>
+
+<section class="wrap section" id="hobbies" aria-labelledby="hobbies-title" style="border-bottom:0">
+  <div class="section-layout">
+    <div><span class="index" data-i18n="idx_hobbies">06 / Hobbies &amp; interests</span><h2 id="hobbies-title" data-i18n="h2_hobbies">A little more<br>human.</h2><p class="interests-intro" data-i18n="hobbies_intro">Chess, swimming, painting, travel — and a curiosity about the mind.</p></div>
+    <div class="interests-grid">
+      <article class="interest-card chess-card"><div class="interest-heading"><span class="eyebrow" data-i18n="hobby1_eyebrow">01 / Strategy</span><span class="hobby-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><rect x="6" y="6" width="28" height="28" rx="2"/><path d="M13 6v28M20 6v28M27 6v28M6 13h28M6 20h28M6 27h28"/></svg></span></div><h3 data-i18n="hobby1_title">Chess</h3><p data-i18n="hobby1_text">64 squares. Endless possibilities.</p></article>
+      <article class="interest-card"><div class="interest-heading"><span class="eyebrow" data-i18n="hobby2_eyebrow">02 / Movement</span><span class="hobby-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 16 Q10 10 16 16 T28 16 T40 16"/><path d="M4 25 Q10 19 16 25 T28 25 T40 25"/></svg></span></div><h3 data-i18n="hobby2_title">Swimming</h3><p data-i18n="hobby2_text">Time away from the screen, in the water.</p></article>
+      <article class="interest-card"><div class="interest-heading"><span class="eyebrow" data-i18n="hobby3_eyebrow">03 / Creativity</span><span class="hobby-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="6" width="20" height="15" rx="1"/><path d="M19 21v11M19 32l-8 4M19 32l8 4M7 28l26-5"/></svg></span></div><h3 data-i18n="hobby3_title">Painting</h3><p data-i18n="hobby3_text">Another space for color, composition and expression.</p></article>
+      <article class="interest-card"><div class="interest-heading"><span class="eyebrow" data-i18n="hobby4_eyebrow">04 / Curiosity</span><span class="hobby-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><text x="20" y="29" font-size="27" text-anchor="middle" font-family="Georgia, serif" fill="currentColor">Ψ</text></svg></span></div><h3 data-i18n="hobby4_title">Psychology</h3><p data-i18n="hobby4_text">An enthusiast's interest in the mind and human behavior.</p></article>
+      <article class="interest-card travel-card"><div class="interest-heading"><span class="eyebrow" data-i18n="hobby5_eyebrow">05 / Exploration</span><span class="hobby-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="20" cy="20" r="14"/><polygon points="20,11 24,20 20,29 16,20" fill="currentColor" stroke="none"/></svg></span></div><h3 data-i18n="hobby5_title">Travel</h3><p data-i18n="hobby5_text">Discovering new places, cultures and perspectives.</p></article>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="wrap contact" id="contact">
+  <span class="index" data-i18n="footer_get_in_touch">Get in touch</span>
+  <h2 data-i18n="footer_h2">Let's build<br><em>something useful.</em></h2>
+  <div class="contact-grid">
+    <a class="contact-email" href="mailto:mariamcheikh823@gmail.com">mariamcheikh823@gmail.com <span aria-hidden="true">↗</span></a>
+    <div class="contact-other">
+      <a class="text-link" href="https://www.linkedin.com/in/mariamcheikh/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      <a class="text-link" href="tel:+491628279163" data-i18n="footer_call">Call me ↗</a>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Mariam Cheikh</span><a href="#home" data-i18n="footer_top">Back to top ↑</a></div>
+</footer>
+
+<script>
+const translations = {
+en:{skip:"Skip to content",nav_about:"About",nav_experience:"Experience",nav_skills:"Expertise",nav_background:"Background",nav_leadership:"Leadership",nav_hobbies:"Hobbies",nav_contact:'Let\'s talk <span aria-hidden="true">↗</span>',
+hero_eyebrow1:"Frontend engineer / React &amp; TypeScript",hero_eyebrow2:"Based in Munich, Germany",
+hero_role:"Thoughtful interfaces.<br><em>Solid engineering.</em>",
+hero_intro:"I build customer-facing products with React and TypeScript, bringing a mobile background and an international perspective to the web.",
+cta_explore:'Explore my experience <span aria-hidden="true">↓</span>',
+fact1_strong:"5+ years",fact1_span:"In software engineering",
+fact2_strong:"Four countries. One perspective.",fact2_span:"Tunisia · Germany · Netherlands · India",
+fact3_strong:"Web &amp; mobile",fact3_span:"From native apps to modern frontends",
+idx_about:"01 / About",h2_about:"Built with<br>perspective.",
+about_lead:"Good interfaces start with understanding the people using them — and the engineering that makes them work.",
+about_body1:"My journey connects software engineering studies in Tunisia with professional experience in India, the Netherlands and Germany. With 5+ years in software engineering, my work spans consumer products serving millions of users, frontend architecture and production releases. Today, I focus on React and TypeScript, building on earlier native Android experience with Kotlin and Java.",
+about_body2:"Alongside engineering, I'm developing my project management knowledge through PMP learning. I'm also a psychology enthusiast, curious about how people think and behave.",
+idx_experience:"02 / Experience",h2_experience:"From idea to production.",experience_head_p:"Product delivery, architecture and collaboration across teams and borders.",
+present:"Present",tag_current:"Current role",
+check24_role:"Software Engineer · CHECK24 Vergleichsportal GmbH",
+check24_b1:"Build and ship customer-facing web and mobile functionality for a consumer platform serving millions of users, using React, TypeScript and Android.",
+check24_b2:"Own major product features, including scan-based functionality, through production release against fixed campaign deadlines.",
+check24_b3:"Modernize frontend architecture by migrating the application to React Router.",
+check24_b4:"Partner with Product, Backend and Data Science to translate business and data requirements into production functionality.",
+check24_b5:"Write lightweight PHP/Symfony controllers and REST integrations to support frontend features.",
+apadmi_role:"Mobile Software Engineer · Contract",
+apadmi_b1:"Developed mobile applications and delivered MVP features in cross-functional teams using Kotlin, Java, Swift, Flutter and Firebase.",
+censo_role:"Software Engineer",
+censo_b1:"Developed customer-facing Vue.js applications in an Agile/Scrum team, shipping new functionality and resolving production defects.",
+censo_placement:"International placement · AIESEC Global Talent Program",
+video_nl_heading:"My experience in the Netherlands",yt_watch:"Watch on YouTube ↗",
+tcs_role:"Mobile Software Engineer",
+tcs_b1:"Developed mobile functionality and REST integrations using Java, Angular and Ionic in an international Agile environment.",
+tcs_placement:"International placement · ACE International Career Program",
+video_in_heading:"My experience in India",
+idx_skills:"03 / Expertise",h2_skills:"A frontend<br>focus.<br><em>A wider lens.</em>",
+skills_frontend:"Frontend",skills_mobile:"Mobile",skills_backend:"Backend exposure",skills_tools:"Ways of working",
+chip_crossfunc:"Cross-functional delivery",chip_ai:"AI-assisted development",
+idx_background:"04 / Background",h2_background:"Beyond<br>the stack.",
+bg_heading_education:"Education &amp; learning",
+edu_esprit_desc:"ESPRIT · Tunis, Tunisia<br>EUR-ACE accredited",
+edu_pmp_title:"PMP exam preparation",edu_pmp_desc:"Completed · 1 September 2025<br>35 contact hours of training",
+edu_pmp_caption:"Continuing to develop my project management knowledge.",
+bg_heading_languages:"Languages",
+lang_ar_name:"🇹🇳 Arabic",lang_ar_level:"Native / bilingual",
+lang_en_name:"🇬🇧 English",lang_en_level:"Full professional",
+lang_fr_name:"🇫🇷 French",lang_fr_level:"Full professional",
+lang_de_name:"🇩🇪 German",lang_de_level:"Elementary",
+bg_heading_recognition:"Recognition",
+award1_detail:"Our team won first prize for a mobile app for the City of Culture at Developers World Forum in Tunisia.",award1_link:"View the story on LinkedIn ↗",
+award2_detail:"My team, The Challengers, placed second among 40 competing teams with TrustKell. Our entry explored blockchain and an environmental theme, bringing a shared idea into a competitive hackathon setting.",award2_link:"Read the Tayara story on LinkedIn ↗",
+idx_leadership:"05 / Leadership",h2_leadership:"Beyond code —<br>growing into<br><em>leadership.</em>",
+lead_lede:"Frontend work has always meant more than writing components for me — it means translating between product, data and engineering, and keeping people aligned around a shared deadline.",
+lead_body:"Five years of cross-functional delivery — partnering daily with Product Management, Backend and Data Science teams — has sharpened skills that go beyond the stack: clear communication, stakeholder alignment and steady decision-making under fixed deadlines. I'm building on this foundation, including through PMP preparation, as I look toward taking on more product- and people-leadership responsibility.",
+lead_chip1:"Cross-functional collaboration",lead_chip2:"Stakeholder communication",lead_chip3:"Ownership under deadlines",lead_chip4:"Translating business &amp; data requirements",lead_chip5:"PMP in progress",
+idx_hobbies:"06 / Hobbies &amp; interests",h2_hobbies:"A little more<br>human.",hobbies_intro:"Chess, swimming, painting, travel — and a curiosity about the mind.",
+hobby1_eyebrow:"01 / Strategy",hobby1_title:"Chess",hobby1_text:"64 squares. Endless possibilities.",
+hobby2_eyebrow:"02 / Movement",hobby2_title:"Swimming",hobby2_text:"Time away from the screen, in the water.",
+hobby3_eyebrow:"03 / Creativity",hobby3_title:"Painting",hobby3_text:"Another space for color, composition and expression.",
+hobby4_eyebrow:"04 / Curiosity",hobby4_title:"Psychology",hobby4_text:"An enthusiast's interest in the mind and human behavior.",
+hobby5_eyebrow:"05 / Exploration",hobby5_title:"Travel",hobby5_text:"Discovering new places, cultures and perspectives.",
+footer_get_in_touch:"Get in touch",footer_h2:"Let's build<br><em>something useful.</em>",footer_call:"Call me ↗",footer_top:"Back to top ↑"},
+
+de:{skip:"Zum Inhalt springen",nav_about:"Über mich",nav_experience:"Erfahrung",nav_skills:"Kompetenzen",nav_background:"Hintergrund",nav_leadership:"Führung",nav_hobbies:"Hobbys",nav_contact:'Kontakt <span aria-hidden="true">↗</span>',
+hero_eyebrow1:"Frontend-Ingenieurin / React &amp; TypeScript",hero_eyebrow2:"Ansässig in München, Deutschland",
+hero_role:"Durchdachte Interfaces.<br><em>Solides Engineering.</em>",
+hero_intro:"Ich entwickle kundenorientierte Produkte mit React und TypeScript und bringe einen mobilen Hintergrund sowie eine internationale Perspektive mit ins Web.",
+cta_explore:'Meine Erfahrung entdecken <span aria-hidden="true">↓</span>',
+fact1_strong:"5+ Jahre",fact1_span:"In der Softwareentwicklung",
+fact2_strong:"Vier Länder. Eine Perspektive.",fact2_span:"Tunesien · Deutschland · Niederlande · Indien",
+fact3_strong:"Web &amp; Mobile",fact3_span:"Von nativen Apps zu modernen Frontends",
+idx_about:"01 / Über mich",h2_about:"Mit Perspektive<br>gebaut.",
+about_lead:"Gute Interfaces beginnen mit dem Verständnis der Menschen, die sie nutzen — und dem Engineering, das sie funktionieren lässt.",
+about_body1:"Mein Werdegang verbindet ein Software-Engineering-Studium in Tunesien mit Berufserfahrung in Indien, den Niederlanden und Deutschland. Mit mehr als 5 Jahren Erfahrung in der Softwareentwicklung reicht meine Arbeit von Konsumentenprodukten mit Millionen von Nutzern über Frontend-Architektur bis hin zu Produktionsreleases. Heute liegt mein Fokus auf React und TypeScript, aufbauend auf früherer nativer Android-Erfahrung mit Kotlin und Java.",
+about_body2:"Neben dem Engineering baue ich mein Projektmanagement-Wissen durch die PMP-Vorbereitung aus. Außerdem interessiere ich mich für Psychologie und bin neugierig darauf, wie Menschen denken und handeln.",
+idx_experience:"02 / Erfahrung",h2_experience:"Von der Idee zur Produktion.",experience_head_p:"Produktumsetzung, Architektur und Zusammenarbeit über Teams und Grenzen hinweg.",
+present:"heute",tag_current:"Aktuelle Position",
+check24_role:"Software-Ingenieurin · CHECK24 Vergleichsportal GmbH",
+check24_b1:"Entwicklung und Bereitstellung kundenorientierter Web- und Mobilfunktionen für eine Konsumentenplattform mit Millionen von Nutzern, mit React, TypeScript und Android.",
+check24_b2:"Eigenverantwortliche Betreuung wichtiger Produktfunktionen, einschließlich scan-basierter Funktionalität, bis zum Produktionsrelease unter festen Kampagnen-Deadlines.",
+check24_b3:"Modernisierung der Frontend-Architektur durch Migration der Anwendung zu React Router.",
+check24_b4:"Enge Zusammenarbeit mit Product Management, Backend- und Data-Science-Teams, um Business- und Datenanforderungen in Produktionsfunktionalität zu übersetzen.",
+check24_b5:"Implementierung leichtgewichtiger PHP/Symfony-Controller und REST-Integrationen zur Unterstützung von Frontend-Funktionen.",
+apadmi_role:"Mobile Software-Ingenieurin · Vertragsbasis",
+apadmi_b1:"Entwicklung mobiler Anwendungen und Bereitstellung von MVP-Funktionen in funktionsübergreifenden Teams mit Kotlin, Java, Swift, Flutter und Firebase.",
+censo_role:"Software-Ingenieurin",
+censo_b1:"Entwicklung kundenorientierter Vue.js-Anwendungen in einem agilen Scrum-Team, Bereitstellung neuer Funktionen und Behebung von Produktionsfehlern.",
+censo_placement:"Internationaler Berufseinsatz · AIESEC Global Talent Program",
+video_nl_heading:"Meine Erfahrung in den Niederlanden",yt_watch:"Auf YouTube ansehen ↗",
+tcs_role:"Mobile Software-Ingenieurin",
+tcs_b1:"Entwicklung mobiler Funktionen und REST-Integrationen mit Java, Angular und Ionic in einem internationalen agilen Umfeld.",
+tcs_placement:"Internationaler Berufseinsatz · ACE International Career Program",
+video_in_heading:"Meine Erfahrung in Indien",
+idx_skills:"03 / Kompetenzen",h2_skills:"Fokus auf<br>Frontend.<br><em>Blick fürs Ganze.</em>",
+skills_frontend:"Frontend",skills_mobile:"Mobile",skills_backend:"Backend-Kenntnisse",skills_tools:"Arbeitsweise",
+chip_crossfunc:"Funktionsübergreifende Zusammenarbeit",chip_ai:"KI-unterstützte Entwicklung",
+idx_background:"04 / Hintergrund",h2_background:"Mehr als<br>der Stack.",
+bg_heading_education:"Ausbildung &amp; Weiterbildung",
+edu_esprit_desc:"ESPRIT · Tunis, Tunesien<br>EUR-ACE-akkreditiert",
+edu_pmp_title:"PMP-Prüfungsvorbereitung",edu_pmp_desc:"Abgeschlossen · 1. September 2025<br>35 Unterrichtsstunden",
+edu_pmp_caption:"Ich baue mein Projektmanagement-Wissen kontinuierlich weiter aus.",
+bg_heading_languages:"Sprachen",
+lang_ar_name:"🇹🇳 Arabisch",lang_ar_level:"Muttersprache / zweisprachig",
+lang_en_name:"🇬🇧 Englisch",lang_en_level:"Verhandlungssicher",
+lang_fr_name:"🇫🇷 Französisch",lang_fr_level:"Verhandlungssicher",
+lang_de_name:"🇩🇪 Deutsch",lang_de_level:"Grundkenntnisse",
+bg_heading_recognition:"Auszeichnungen",
+award1_detail:"Unser Team gewann den ersten Platz für eine mobile App für die City of Culture beim Developers World Forum in Tunesien.",award1_link:"Die Geschichte auf LinkedIn ansehen ↗",
+award2_detail:"Mein Team, The Challengers, belegte mit TrustKell den zweiten Platz unter 40 teilnehmenden Teams. Unser Beitrag verband Blockchain mit einem Umweltthema und brachte eine gemeinsame Idee in einen wettbewerbsorientierten Hackathon-Rahmen.",award2_link:"Die Tayara-Geschichte auf LinkedIn lesen ↗",
+idx_leadership:"05 / Führung",h2_leadership:"Mehr als Code —<br>auf dem Weg<br><em>in Führung.</em>",
+lead_lede:"Frontend-Arbeit bedeutet für mich schon immer mehr als das Schreiben von Komponenten — sie bedeutet, zwischen Produkt, Daten und Engineering zu vermitteln und Menschen auf ein gemeinsames Ziel auszurichten.",
+lead_body:"Fünf Jahre funktionsübergreifender Zusammenarbeit — im täglichen Austausch mit Product Management, Backend- und Data-Science-Teams — haben Fähigkeiten geschärft, die über den Stack hinausgehen: klare Kommunikation, Stakeholder-Abstimmung und ruhige Entscheidungsfindung unter festen Deadlines. Darauf baue ich weiter auf, unter anderem durch meine PMP-Vorbereitung, mit Blick auf mehr Verantwortung in Produkt- und Personalführung.",
+lead_chip1:"Funktionsübergreifende Zusammenarbeit",lead_chip2:"Stakeholder-Kommunikation",lead_chip3:"Verantwortung unter Deadlines",lead_chip4:"Übersetzung von Business- &amp; Datenanforderungen",lead_chip5:"PMP in Vorbereitung",
+idx_hobbies:"06 / Hobbys &amp; Interessen",h2_hobbies:"Ein bisschen<br>menschlicher.",hobbies_intro:"Schach, Schwimmen, Malen, Reisen — und die Neugier auf den menschlichen Geist.",
+hobby1_eyebrow:"01 / Strategie",hobby1_title:"Schach",hobby1_text:"64 Felder. Endlose Möglichkeiten.",
+hobby2_eyebrow:"02 / Bewegung",hobby2_title:"Schwimmen",hobby2_text:"Zeit weg vom Bildschirm, im Wasser.",
+hobby3_eyebrow:"03 / Kreativität",hobby3_title:"Malen",hobby3_text:"Ein weiterer Raum für Farbe, Komposition und Ausdruck.",
+hobby4_eyebrow:"04 / Neugier",hobby4_title:"Psychologie",hobby4_text:"Ein leidenschaftliches Interesse am menschlichen Geist und Verhalten.",
+hobby5_eyebrow:"05 / Entdeckung",hobby5_title:"Reisen",hobby5_text:"Neue Orte, Kulturen und Perspektiven entdecken.",
+footer_get_in_touch:"Kontakt aufnehmen",footer_h2:"Lass uns etwas<br><em>Sinnvolles bauen.</em>",footer_call:"Anrufen ↗",footer_top:"Nach oben ↑"},
+
+nl:{skip:"Naar inhoud",nav_about:"Over mij",nav_experience:"Ervaring",nav_skills:"Expertise",nav_background:"Achtergrond",nav_leadership:"Leiderschap",nav_hobbies:"Hobby's",nav_contact:'Contact <span aria-hidden="true">↗</span>',
+hero_eyebrow1:"Frontend engineer / React &amp; TypeScript",hero_eyebrow2:"Gevestigd in München, Duitsland",
+hero_role:"Doordachte interfaces.<br><em>Solide engineering.</em>",
+hero_intro:"Ik bouw klantgerichte producten met React en TypeScript, met een mobiele achtergrond en een internationaal perspectief op het web.",
+cta_explore:'Bekijk mijn ervaring <span aria-hidden="true">↓</span>',
+fact1_strong:"5+ jaar",fact1_span:"In softwareontwikkeling",
+fact2_strong:"Vier landen. Eén perspectief.",fact2_span:"Tunesië · Duitsland · Nederland · India",
+fact3_strong:"Web &amp; mobiel",fact3_span:"Van native apps tot moderne frontends",
+idx_about:"01 / Over mij",h2_about:"Gebouwd met<br>perspectief.",
+about_lead:"Goede interfaces beginnen met het begrijpen van de mensen die ze gebruiken — en de engineering die ze laat werken.",
+about_body1:"Mijn pad verbindt een studie software engineering in Tunesië met werkervaring in India, Nederland en Duitsland. Met 5+ jaar ervaring in softwareontwikkeling omvat mijn werk consumentenproducten met miljoenen gebruikers, frontend-architectuur en productiereleases. Vandaag ligt mijn focus op React en TypeScript, voortbouwend op eerdere native Android-ervaring met Kotlin en Java.",
+about_body2:"Naast engineering bouw ik mijn kennis van projectmanagement uit via mijn PMP-voorbereiding. Ook ben ik geïnteresseerd in psychologie en nieuwsgierig naar hoe mensen denken en handelen.",
+idx_experience:"02 / Ervaring",h2_experience:"Van idee tot productie.",experience_head_p:"Productlevering, architectuur en samenwerking over teams en grenzen heen.",
+present:"heden",tag_current:"Huidige functie",
+check24_role:"Software engineer · CHECK24 Vergleichsportal GmbH",
+check24_b1:"Bouwen en uitleveren van klantgerichte web- en mobiele functionaliteit voor een consumentenplatform met miljoenen gebruikers, met React, TypeScript en Android.",
+check24_b2:"Eigenaarschap over belangrijke productfuncties, waaronder scan-gebaseerde functionaliteit, tot aan productierelease binnen vaste campagnedeadlines.",
+check24_b3:"Moderniseren van de frontend-architectuur door de applicatie naar React Router te migreren.",
+check24_b4:"Samenwerking met Product, Backend en Data Science om business- en datavereisten te vertalen naar productiefunctionaliteit.",
+check24_b5:"Schrijven van lichte PHP/Symfony-controllers en REST-integraties ter ondersteuning van frontend-functies.",
+apadmi_role:"Mobile software engineer · Contractbasis",
+apadmi_b1:"Ontwikkeling van mobiele applicaties en oplevering van MVP-functies in cross-functionele teams met Kotlin, Java, Swift, Flutter en Firebase.",
+censo_role:"Software engineer",
+censo_b1:"Ontwikkeling van klantgerichte Vue.js-applicaties in een Agile/Scrum-team, met oplevering van nieuwe functionaliteit en het oplossen van productiedefecten.",
+censo_placement:"Internationale plaatsing · AIESEC Global Talent Program",
+video_nl_heading:"Mijn ervaring in Nederland",yt_watch:"Bekijk op YouTube ↗",
+tcs_role:"Mobile software engineer",
+tcs_b1:"Ontwikkeling van mobiele functionaliteit en REST-integraties met Java, Angular en Ionic in een internationale Agile-omgeving.",
+tcs_placement:"Internationale plaatsing · ACE International Career Program",
+video_in_heading:"Mijn ervaring in India",
+idx_skills:"03 / Expertise",h2_skills:"Focus op<br>frontend.<br><em>Brede blik.</em>",
+skills_frontend:"Frontend",skills_mobile:"Mobile",skills_backend:"Backend-ervaring",skills_tools:"Manier van werken",
+chip_crossfunc:"Cross-functionele samenwerking",chip_ai:"AI-ondersteunde ontwikkeling",
+idx_background:"04 / Achtergrond",h2_background:"Meer dan<br>de stack.",
+bg_heading_education:"Opleiding &amp; ontwikkeling",
+edu_esprit_desc:"ESPRIT · Tunis, Tunesië<br>EUR-ACE geaccrediteerd",
+edu_pmp_title:"PMP-examenvoorbereiding",edu_pmp_desc:"Voltooid · 1 september 2025<br>35 contacturen training",
+edu_pmp_caption:"Ik blijf mijn kennis van projectmanagement verder ontwikkelen.",
+bg_heading_languages:"Talen",
+lang_ar_name:"🇹🇳 Arabisch",lang_ar_level:"Moedertaal / tweetalig",
+lang_en_name:"🇬🇧 Engels",lang_en_level:"Vloeiend (professioneel)",
+lang_fr_name:"🇫🇷 Frans",lang_fr_level:"Vloeiend (professioneel)",
+lang_de_name:"🇩🇪 Duits",lang_de_level:"Basiskennis",
+bg_heading_recognition:"Erkenning",
+award1_detail:"Ons team won de eerste prijs voor een mobiele app voor de City of Culture tijdens het Developers World Forum in Tunesië.",award1_link:"Bekijk het verhaal op LinkedIn ↗",
+award2_detail:"Mijn team, The Challengers, behaalde met TrustKell de tweede plaats onder 40 deelnemende teams. Onze inzending verkende blockchain en een milieuthema en bracht een gedeeld idee naar een competitieve hackathon-omgeving.",award2_link:"Lees het Tayara-verhaal op LinkedIn ↗",
+idx_leadership:"05 / Leiderschap",h2_leadership:"Meer dan code —<br>op weg naar<br><em>leiderschap.</em>",
+lead_lede:"Frontendwerk betekent voor mij altijd meer dan het schrijven van componenten — het betekent schakelen tussen product, data en engineering, en mensen op één lijn houden rond een gedeelde deadline.",
+lead_body:"Vijf jaar cross-functionele samenwerking — met dagelijks contact met Product Management, Backend- en Data Science-teams — heeft vaardigheden aangescherpt die verder gaan dan de stack: heldere communicatie, afstemming met stakeholders en rustige besluitvorming binnen vaste deadlines. Ik bouw hierop voort, onder andere via mijn PMP-voorbereiding, met het oog op meer verantwoordelijkheid in product- en people-leiderschap.",
+lead_chip1:"Cross-functionele samenwerking",lead_chip2:"Stakeholdercommunicatie",lead_chip3:"Eigenaarschap onder deadlines",lead_chip4:"Vertalen van business- &amp; datavereisten",lead_chip5:"PMP in voorbereiding",
+idx_hobbies:"06 / Hobby's &amp; interesses",h2_hobbies:"Een beetje<br>menselijker.",hobbies_intro:"Schaken, zwemmen, schilderen, reizen — en nieuwsgierigheid naar de menselijke geest.",
+hobby1_eyebrow:"01 / Strategie",hobby1_title:"Schaken",hobby1_text:"64 velden. Eindeloze mogelijkheden.",
+hobby2_eyebrow:"02 / Beweging",hobby2_title:"Zwemmen",hobby2_text:"Tijd weg van het scherm, in het water.",
+hobby3_eyebrow:"03 / Creativiteit",hobby3_title:"Schilderen",hobby3_text:"Nog een plek voor kleur, compositie en expressie.",
+hobby4_eyebrow:"04 / Nieuwsgierigheid",hobby4_title:"Psychologie",hobby4_text:"Een enthousiaste interesse in de geest en menselijk gedrag.",
+hobby5_eyebrow:"05 / Verkenning",hobby5_title:"Reizen",hobby5_text:"Nieuwe plekken, culturen en perspectieven ontdekken.",
+footer_get_in_touch:"Neem contact op",footer_h2:"Laten we iets<br><em>nuttigs bouwen.</em>",footer_call:"Bel mij ↗",footer_top:"Naar boven ↑"},
+
+fr:{skip:"Aller au contenu",nav_about:"À propos",nav_experience:"Expérience",nav_skills:"Compétences",nav_background:"Parcours",nav_leadership:"Leadership",nav_hobbies:"Loisirs",nav_contact:'Contact <span aria-hidden="true">↗</span>',
+hero_eyebrow1:"Ingénieure frontend / React &amp; TypeScript",hero_eyebrow2:"Basée à Munich, Allemagne",
+hero_role:"Interfaces réfléchies.<br><em>Ingénierie solide.</em>",
+hero_intro:"Je conçois des produits orientés client avec React et TypeScript, en apportant une expérience mobile et une perspective internationale au web.",
+cta_explore:'Découvrir mon parcours <span aria-hidden="true">↓</span>',
+fact1_strong:"5+ ans",fact1_span:"En ingénierie logicielle",
+fact2_strong:"Quatre pays. Une seule perspective.",fact2_span:"Tunisie · Allemagne · Pays-Bas · Inde",
+fact3_strong:"Web &amp; mobile",fact3_span:"Des applications natives aux frontends modernes",
+idx_about:"01 / À propos",h2_about:"Construit avec<br>une perspective.",
+about_lead:"Une bonne interface commence par la compréhension des personnes qui l'utilisent — et par l'ingénierie qui la fait fonctionner.",
+about_body1:"Mon parcours relie des études d'ingénierie logicielle en Tunisie à une expérience professionnelle en Inde, aux Pays-Bas et en Allemagne. Avec plus de 5 ans d'expérience en ingénierie logicielle, mon travail couvre des produits grand public utilisés par des millions d'utilisateurs, l'architecture frontend et les mises en production. Aujourd'hui, je me concentre sur React et TypeScript, en m'appuyant sur une expérience antérieure en développement Android natif avec Kotlin et Java.",
+about_body2:"En parallèle de l'ingénierie, je développe mes connaissances en gestion de projet via ma préparation PMP. Je suis également passionnée de psychologie, curieuse de comprendre comment les gens pensent et agissent.",
+idx_experience:"02 / Expérience",h2_experience:"De l'idée à la production.",experience_head_p:"Livraison produit, architecture et collaboration entre équipes et frontières.",
+present:"aujourd'hui",tag_current:"Poste actuel",
+check24_role:"Ingénieure logicielle · CHECK24 Vergleichsportal GmbH",
+check24_b1:"Développement et déploiement de fonctionnalités web et mobiles orientées client pour une plateforme grand public utilisée par des millions d'utilisateurs, avec React, TypeScript et Android.",
+check24_b2:"Responsable de fonctionnalités produit majeures, y compris une fonctionnalité basée sur le scan, jusqu'à la mise en production, dans le respect de délais de campagne fixes.",
+check24_b3:"Modernisation de l'architecture frontend en migrant l'application vers React Router.",
+check24_b4:"Collaboration avec les équipes Produit, Backend et Data Science pour traduire les besoins métier et data en fonctionnalités de production.",
+check24_b5:"Rédaction de contrôleurs PHP/Symfony légers et d'intégrations REST pour soutenir les fonctionnalités frontend.",
+apadmi_role:"Ingénieure logicielle mobile · Contrat",
+apadmi_b1:"Développement d'applications mobiles et livraison de fonctionnalités MVP au sein d'équipes transverses, avec Kotlin, Java, Swift, Flutter et Firebase.",
+censo_role:"Ingénieure logicielle",
+censo_b1:"Développement d'applications Vue.js orientées client au sein d'une équipe Agile/Scrum, livraison de nouvelles fonctionnalités et résolution d'anomalies en production.",
+censo_placement:"Mission internationale · AIESEC Global Talent Program",
+video_nl_heading:"Mon expérience aux Pays-Bas",yt_watch:"Voir sur YouTube ↗",
+tcs_role:"Ingénieure logicielle mobile",
+tcs_b1:"Développement de fonctionnalités mobiles et d'intégrations REST avec Java, Angular et Ionic dans un environnement Agile international.",
+tcs_placement:"Mission internationale · ACE International Career Program",
+video_in_heading:"Mon expérience en Inde",
+idx_skills:"03 / Compétences",h2_skills:"Un focus<br>frontend.<br><em>Une vision plus large.</em>",
+skills_frontend:"Frontend",skills_mobile:"Mobile",skills_backend:"Exposition backend",skills_tools:"Méthodes de travail",
+chip_crossfunc:"Livraison transverse",chip_ai:"Développement assisté par IA",
+idx_background:"04 / Parcours",h2_background:"Au-delà<br>de la stack.",
+bg_heading_education:"Formation &amp; apprentissage",
+edu_esprit_desc:"ESPRIT · Tunis, Tunisie<br>Accrédité EUR-ACE",
+edu_pmp_title:"Préparation à l'examen PMP",edu_pmp_desc:"Terminé · 1 septembre 2025<br>35 heures de formation",
+edu_pmp_caption:"Je continue à développer mes connaissances en gestion de projet.",
+bg_heading_languages:"Langues",
+lang_ar_name:"🇹🇳 Arabe",lang_ar_level:"Langue maternelle / bilingue",
+lang_en_name:"🇬🇧 Anglais",lang_en_level:"Courant professionnel",
+lang_fr_name:"🇫🇷 Français",lang_fr_level:"Courant professionnel",
+lang_de_name:"🇩🇪 Allemand",lang_de_level:"Notions de base",
+bg_heading_recognition:"Distinctions",
+award1_detail:"Notre équipe a remporté la première place pour une application mobile dédiée à la City of Culture lors du Developers World Forum en Tunisie.",award1_link:"Voir l'histoire sur LinkedIn ↗",
+award2_detail:"Mon équipe, The Challengers, a terminé deuxième parmi 40 équipes avec TrustKell. Notre projet explorait la blockchain autour d'une thématique environnementale, dans le cadre compétitif d'un hackathon.",award2_link:"Lire l'histoire Tayara sur LinkedIn ↗",
+idx_leadership:"05 / Leadership",h2_leadership:"Au-delà du code —<br>vers le<br><em>leadership.</em>",
+lead_lede:"Le travail frontend a toujours signifié pour moi bien plus qu'écrire des composants — c'est faire le lien entre produit, data et ingénierie, et garder les équipes alignées autour d'un objectif commun.",
+lead_body:"Cinq années de collaboration transverse — en lien quotidien avec les équipes Produit, Backend et Data Science — ont affiné des compétences qui vont au-delà de la technique : une communication claire, un alignement avec les parties prenantes et une prise de décision posée dans des délais serrés. Je continue à développer cette base, notamment via ma préparation PMP, avec l'ambition d'endosser davantage de responsabilités en leadership produit et humain.",
+lead_chip1:"Collaboration transverse",lead_chip2:"Communication avec les parties prenantes",lead_chip3:"Responsabilité sous délais",lead_chip4:"Traduction des besoins métier &amp; data",lead_chip5:"PMP en préparation",
+idx_hobbies:"06 / Loisirs &amp; centres d'intérêt",h2_hobbies:"Un peu plus<br>humain.",hobbies_intro:"Échecs, natation, peinture, voyages — et une curiosité pour l'esprit humain.",
+hobby1_eyebrow:"01 / Stratégie",hobby1_title:"Échecs",hobby1_text:"64 cases. Des possibilités infinies.",
+hobby2_eyebrow:"02 / Mouvement",hobby2_title:"Natation",hobby2_text:"Du temps loin de l'écran, dans l'eau.",
+hobby3_eyebrow:"03 / Créativité",hobby3_title:"Peinture",hobby3_text:"Un autre espace pour la couleur, la composition et l'expression.",
+hobby4_eyebrow:"04 / Curiosité",hobby4_title:"Psychologie",hobby4_text:"Un intérêt passionné pour l'esprit et le comportement humain.",
+hobby5_eyebrow:"05 / Exploration",hobby5_title:"Voyages",hobby5_text:"Découvrir de nouveaux lieux, cultures et perspectives.",
+footer_get_in_touch:"Me contacter",footer_h2:"Construisons<br><em>quelque chose d'utile.</em>",footer_call:"Appelez-moi ↗",footer_top:"Retour en haut ↑"}
+};
+
+function setLang(lang){
+  const dict = translations[lang] || translations.en;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (dict[key] !== undefined) el.innerHTML = dict[key];
+  });
+  document.querySelectorAll('.lang-switch button').forEach(b => {
+    b.classList.toggle('active', b.dataset.lang === lang);
+  });
+  document.getElementById('html-root').setAttribute('lang', lang);
+  try { localStorage.setItem('portfolio-lang', lang); } catch(e){}
+}
+
+document.querySelectorAll('.lang-switch button').forEach(btn => {
+  btn.addEventListener('click', () => setLang(btn.dataset.lang));
+});
+
+let initialLang = 'en';
+try {
+  const saved = localStorage.getItem('portfolio-lang');
+  if (saved && translations[saved]) initialLang = saved;
+} catch(e){}
+setLang(initialLang);
+
+const links = [...document.querySelectorAll('nav a')];
+const sections = links.map(link => document.querySelector(link.getAttribute('href')));
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        links.forEach(link => {
+          if (link.getAttribute('href') === '#' + entry.target.id) link.setAttribute('aria-current', 'location');
+          else link.removeAttribute('aria-current');
+        });
+      }
+    });
+  }, { rootMargin: '-15% 0px -45% 0px', threshold: 0 });
+  sections.forEach(section => observer.observe(section));
+}
+
+document.querySelectorAll('.video-frame[data-video-id]').forEach(frame => {
+  // Opens the clip on YouTube in a new tab instead of an inline embed.
+  // Inline embeds depend on YouTube receiving a valid referrer (and on the
+  // uploader not having restricted embedding) — neither is fully in our
+  // control, and a failed embed shows YouTube's own "Error 153" screen,
+  // which has no place on a portfolio. Opening in a new tab always works.
+  const open = () => {
+    const id = frame.dataset.videoId;
+    const start = frame.dataset.videoStart ? ('&t=' + frame.dataset.videoStart + 's') : '';
+    window.open('https://www.youtube.com/watch?v=' + id + start, '_blank', 'noopener,noreferrer');
+  };
+  frame.addEventListener('click', open);
+  frame.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
+  });
+});
+</script>
+</body>
+</html>
